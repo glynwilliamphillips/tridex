@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CROSSWORD test 2</title>
+
+<script language="javascript1.5" src="CLUES4.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="DATA3.js" type="text/javascript">
+</script>
+
+<script language="javascript1.5" src="where_word.js" type="text/javascript">
+</script>
+
+<script language="javascript1.5" src="Cube.js" type="text/javascript">
+</script>
+
+<script language="javascript1.5" src="screen_functions.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="word.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="functions_used.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="letter_pressed.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="functions8.js" type="text/javascript">
+</script>
+<!--
+<script language="javascript1.5" src="show_axes.js" type="text/javascript">
+</script>
+-->
+<!--
+<script language="javascript1.5" src="word_handling2.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="clues_code.js" type="text/javascript">
+</script>
+-->
+
+
+<script language="javascript1.5" src="clear_cube_space.js" type="text/javascript">
+</script>
+
+<script language="javascript1.5" src="display_level.js" type="text/javascript">
+</script>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+
+
+<style language="javascript1.5" src="style.css"  type="text/css">
+</style>
+
+
+</head>
+
+
+<body bgcolor="#CCFF33">
+<!--
+<p id="para_hole">
+para_hole<br>
+<input type="submit" name="button2" id="button2" value="test instr." onClick="test_instruction('aaa')">
+<input type="submit" name="button2" id="button2" value="test other" onClick="test_other('aaa')">
+<input type="submit" name="button5" id="button3" value="Progress plan">
+<br>
+<textarea name="instruction" id="instruction_box" cols="50" rows="1">please wait</textarea> </p>
+-->
+
+<!-- myform taken from here -->
+
+
+
+
+
+
+<p class='frame3a'>frame3:
+<input name="frame3_word_0" id="frame3_word_0" type="text"  value="0" size="1">
+<input name="frame3_word_1" id="frame3_word_1" type="text"  value="1" size="1">
+<input name="frame3_word_2" id="frame3_word_2" type="text"  value="2" size="1">
+<input name="frame3_word_3" id="frame3_word_3" type="text"  value="3" size="1">
+<input name="frame3_word_4" id="frame3_word_4" type="text" value="4" size="1">
+<input name="frame3_word_5" id="frame3_word_5" type="text"  value="5" size="1">
+<input name="frame3_word_6" id="frame3_word_6" type="text"  value="6" size="1">
+<br>
+
+<select name="possible" id="POSSIBLE"  onChange="answer_selected('possible')">
+<!--<option value="mahogany" onClick="answer_selected('mahogany')">Possible words x</option> -->
+<!--
+
+<option value="mahogany">Possible</option>
+<option value="mahogany"> words</option>
+ -->
+</select>
+<input name="clue_box" type="text" value="c_b clue_box" id="clue_box" readonly="true" size="100px" width="100px">
+<input name="save_answer1" type="button" onClick="save_answer()" value=">" size="100px" width="20%" onMouseOver="key_note('save the word')">
+<br>
+<input name="letterA" type="button" onClick="letter_pressed('A')" value="A" size="100px" width="20%">
+<input name="letterB" type="button" onClick="letter_pressed('B')" value="B" width="20px">
+<input name="letterC" type="button" onClick="letter_pressed('C')" value="C" width="20px">
+<input name="letterD" type="button" onClick="letter_pressed('D')" value="D" width="20px">
+<input name="letterE" type="button" onClick="letter_pressed('E')" value="E" width="20px">
+<br>
+
+<input name="letterF" type="button" onClick="letter_pressed('F')" value="F" width="20px">
+<input name="letterG" type="button" onClick="letter_pressed('G')" value="G" width="20px">
+<input name="letterH" type="button" onClick="letter_pressed('H')" value="H" width="20px">
+<input name="letterI" type="button" onClick="letter_pressed('I')" value="I" width="20px">
+<input name="letterJ" type="button" onClick="letter_pressed('J')" value="J" width="20px">
+<br>
+
+<input name="letterK" type="button" onClick="letter_pressed('K')" value="K" width="20px">
+<input name="letterL" type="button" onClick="letter_pressed('L')" value="L" width="20px">
+<input name="letterM" type="button" onClick="letter_pressed('M')" value="M" width="20px">
+<input name="letterN" type="button" onClick="letter_pressed('N')" value="N" width="20px">
+<input name="letterO" type="button" onClick="letter_pressed('O')" value="O" width="20px">
+<br>
+
+<input name="letterP" type="button" onClick="letter_pressed('P')" value="P" width="20px">
+<input name="letterQ" type="button" onClick="letter_pressed('Q')" value="Q" width="20px">
+<input name="letterR" type="button" onClick="letter_pressed('R')" value="R" width="20px">
+<input name="letterS" type="button" onClick="letter_pressed('S')" value="S" width="20px">
+<input name="letterT" type="button" onClick="letter_pressed('T')" value="T" width="20px">
+<br>
+
+<input name="letterU" type="button" onClick="letter_pressed('U')" value="U" width="20px">
+<input name="letterV" type="button" onClick="letter_pressed('V')" value="V" width="20px">
+<input name="letterW" type="button" onClick="letter_pressed('W')" value="W" width="20px">
+<input name="letterX" type="button" onClick="letter_pressed('X')" value="X" width="20px">
+<input name="letterY" type="button" onClick="letter_pressed('Y')" value="Y" width="20px">
+<input name="letterZ" type="button" onClick="letter_pressed('Z')" value="Z" width="20px">
+</p> 
+<p class="x0y0">
+	<input name="instruction" type="text" id="message_id" value="Click a button to draw cubes - blue Across; red Behind; Orange Down" size="80">
+   <input type="submit" name="i_button" id="i_button" value="test mess" onClick="user_instruction(1)">
+ 	
+    <br>
+    <!--
+   <input type="submit" name="button" id="button" value="emulate stage 1" onClick="emulate(1)">
+   <input type="submit" name="button" id="button" value="2" onClick="emulate(2)">
+   <input type="submit" name="button" id="button" value="3" onClick="emulate(3)">
+   <input type="submit" name="button" id="button" value="123" onClick="emulate(123)">
+   <br>
+   -->
+   <input type="submit" name="YELLbutton" id="YELLbutton" value="YELL" onClick="do_YELLOW()">
+   <input type="submit" name="list" id="LISTbutton" value="list" onClick="do_list()">
+   <input type="radio" name="button5" id="list_on_tag" value="1">
+  <input type="submit" name="space" id="spacebutton" value="space" onClick="show_cube_space()">
+   <input type="submit" name="word_search" value="words scan" onClick="find_word_HTU(53,0)">
+   <br>
+   <input type="submit" name="draw_numbers" value="draw numbers" onClick="set_draw_numbers()">
+  <input type="radio" name="draw_numbers tag" id="draw_numbers_tag" value="1">
+   <input type="submit" name="draw_coords" value="draw coords" onClick="set_draw_coords()">
+  <input type="radio" name="coords tag" id="draw_coords_tag" value="1">
+  <br>
+   <input type="submit" name="check" value="check 270" onClick="check_270()">
+</p>
+<p class="vis" id="p_left">
+
+
+
+
+</p>
+<p class="vis" id="p_top">
+</p>
+<p id="p_right">
+
+</p>
+<p id="p_x_axis">
+</p>
+<p id="p_y_axis"></p>
+<p id="p_z_axis">
+</p>
+
+<!------------------->
+<div id="cube_space">
+cube_space
+</div>
+
+</script>
+<p>
+
+	<input type="button" onClick="draw_cube_space_d(0)" class="d000" id="z0" value="D=0"> 	
+	<input type="button" onClick="draw_cube_space_d(1)" class="d100" id="z1" value="1"> 	
+	<input type="button" onClick="draw_cube_space_d(2)" class="d200" id="z2" value="2">
+	<input type="button" onClick="draw_cube_space_d(3)" class="d300" id="z3" value="3">
+	<input type="button" onClick="draw_cube_space_d(4)" class="d400" id="z4" value="4">
+	<input type="button" onClick="draw_cube_space_d(5)" class="d500" id="z5" value="5">
+	<input type="button" onClick="draw_cube_space_d(6)" class="d600" id="z6" value="6">
+    
+        
+	<input type="button" onClick="draw_cube_space_b(0)" class="b000" id="y0" value="0"> 	
+	<input type="button" onClick="draw_cube_space_b(1)" class="b100" id="y1" value="1"> 	
+	<input type="button" onClick="draw_cube_space_b(2)" class="b200" id="y2" value="2">
+	<input type="button" onClick="draw_cube_space_b(3)" class="b300" id="y3" value="3">
+	<input type="button" onClick="draw_cube_space_b(4)" class="b400" id="y4" value="4">
+	<input type="button" onClick="draw_cube_space_b(5)" class="b500" id="y5" value="5">
+	<input type="button" onClick="draw_cube_space_b(6)" class="b600" id="y6" value="b=6">
+
+	<input type="button" onClick="draw_cube_space_a(0)" class="a000" id="x0" value="0"> 	
+	<input type="button" onClick="draw_cube_space_a(1)" class="a100" id="x1" value="1"> 	
+	<input type="button" onClick="draw_cube_space_a(2)" class="a200" id="x2" value="2">
+	<input type="button" onClick="draw_cube_space_a(3)" class="a300" id="x3" value="3">
+	<input type="button" onClick="draw_cube_space_a(4)" class="a400" id="x4" value="4">
+	<input type="button" onClick="draw_cube_space_a(5)" class="a500" id="x5" value="5">
+	<input type="button" onClick="draw_cube_space_a(6)" class="a600" id="x6" value="A=6">
+
+
+
+</body>
+</html>

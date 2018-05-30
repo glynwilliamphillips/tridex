@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CROSSWORD test 2</title>
+
+
+
+<script language="javascript1.5" src="CLUES_1.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="CLUES_2.js" type="text/javascript">
+</script>
+
+
+<script language="javascript1.5" src="word_location.js" type="text/javascript">
+</script>
+
+
+<script language="javascript1.5" src="word.js" type="text/javascript">
+</script>
+
+<script language="javascript1.5" src="DATA3.js" type="text/javascript">
+</script>
+
+<script language="javascript1.5" src="Cube.js" type="text/javascript">
+</script>
+
+<script language="javascript1.5" src="green_pressed.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="draw_cube_loop.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="screen_functions.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="use_answers.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="cubify.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="functions_used.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="letter_pressed.js" type="text/javascript">
+</script>
+<!--
+<script language="javascript1.5" src="functions8.js" type="text/javascript">
+</script>
+-->
+
+<script language="javascript1.5" src="clear_cube_space.js" type="text/javascript">
+</script>
+<script language="javascript1.5" src="NOT_USED.js" type="text/javascript">
+</script>
+
+<script language="javascript1.5" src="display_level.js" type="text/javascript">
+</script>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+
+
+<style language="javascript1.5" src="style.css"  type="text/css">
+</style>
+
+
+</head>
+
+
+<body bgcolor="white">
+<p class='frame1'>frame 1<br>
+<input name="letterA" type="button" onClick="letter_pressed('A')"  value="A" size="100px" width="20%">
+<input name="letterB" type="button" onClick="letter_pressed('B')" value="B" width="20px">
+<input name="letterC" type="button" onClick="letter_pressed('C')" value="C" width="20px">
+<input name="letterD" type="button" onClick="letter_pressed('D')" value="D" width="20px">
+<input name='blank' type="button" onClick="letter_pressed('_')" value="_" width="40px">
+<br>
+<input name="letterE" type="button" onClick="letter_pressed('E')" value="E" width="20px">
+<input name="letterF" type="button" onClick="letter_pressed('F')" value="F" width="20px">
+<input name="letterG" type="button" onClick="letter_pressed('G')" value="G" width="20px">
+<input name="letterH" type="button" onClick="letter_pressed('H')" value="H" width="20px">
+<input name="letterI" type="button" onClick="letter_pressed('I')" value="I" width="20px">
+<input name="letterJ" type="button" onClick="letter_pressed('J')" value="J" width="20px">
+<br>
+
+<input name="letterK" type="button" onClick="letter_pressed('K')" value="K" width="20px">
+<input name="letterL" type="button" onClick="letter_pressed('L')" value="L" width="20px">
+<input name="letterM" type="button" onClick="letter_pressed('M')" value="M" width="20px">
+<input name="letterN" type="button" onClick="letter_pressed('N')" value="N" width="20px">
+<input name="letterO" type="button" onClick="letter_pressed('O')" value="O" width="20px">
+<br>
+
+<input name="letterP" type="button" onClick="letter_pressed('P')" value="P" width="20px">
+<input name="letterQ" type="button" onClick="letter_pressed('Q')" value="Q" width="20px">
+<input name="letterR" type="button" onClick="letter_pressed('R')" value="R" width="20px">
+<input name="letterS" type="button" onClick="letter_pressed('S')" value="S" width="20px">
+<input name="letterT" type="button" onClick="letter_pressed('T')" value="T" width="20px">
+<br>
+
+<input name="letterU" type="button" onClick="letter_pressed('U')" value="U" width="20px">
+<input name="letterV" type="button" onClick="letter_pressed('V')" value="V" width="20px">
+<input name="letterW" type="button" onClick="letter_pressed('W')" value="W" width="20px">
+<input name="letterX" type="button" onClick="letter_pressed('X')" value="X" width="20px">
+<input name="letterY" type="button" onClick="letter_pressed('Y')" value="Y" width="20px">
+<input name="letterZ" type="button" onClick="letter_pressed('Z')" value="Z" width="20px">
+<br>
+</p>
+
+<p class='frame2'> frame 2: Cambridge News<br>
+<select name="possible_1" id="POSSIBLE_1"  onChange="answer_selected('possible1')">
+<option value="mahogany">'Possible_1' answers from Cambridge News</option>
+</select>
+<select name="clues_1" id="clues_1" onChange="clue_selected_1('news')">
+<option value="text">News clues selected from Cambridge News</option>
+</select>
+<input name="save_answer1" type="button" onClick="cubify_answer()" value=">" size="100px" width="20%" >
+</p>
+
+<p class='frame3a'>frame3: Own creation<br>
+
+<select name="possible_2" id="POSSIBLE_2"  onChange="answer_selected('possible2')">
+<option value="mahogany">'Possible_2' answers from own creation</option>
+</select>
+
+
+
+<select name="clues_2" id="clues_2" onChange="clue_selected_2('own creation')">
+<option value="text">Clues selected from own creation</option>
+</select>
+
+<input name="clue_box" type="text" value="c_news clues" id="clue_box" readonly="true" size="100px" width="100px">
+<input name="save_answer1" type="button" onClick="cubify_answer()" value=">" size="100px" width="20%" >
+<br>
+
+</p> 
+<div class="results">
+	<p class="results"><input name="blob" type="button" onClick="use_answers()" value="Use answers"></p>
+	<p class="resultsy"> class="results" save_answer()</p>
+	<p class="results">Across=0; 
+	Back=1,3,5; 
+	Climb=1,3,5</p>
+	<p class='resultsy' id='results_0_1_1'>0_1_1;&quot;A South Polar muddle, in short, surely superfluous in South Polar regions&quot;;&quot;PARASOL&quot;;</p>
+	<p class='resultsy' id='results_0_1_3'>0_1_3;&quot;Schoolboy's book case&quot;;&quot;SATCHEL&quot;;</p>
+	<p class='resultsy' id='results_0_1_5'>0_1_5;&quot;Chap doesn't get any younger but still has control&quot;;MANAGES&quot;;</p>
+
+	<p class='resultsy' id='results_0_3_1'>0_3_1;"Military commander isn't particular";"GENERAL";</p>
+	<p class='resultsy' id='results_0_3_3'>0_3_3;"Shocking news before Edward is beaten";"WORSTED";</p>
+	<p class='resultsy' id='results_0_3_5'>0_3_5;"There's some point in this system";"DECIMAL";</p>
+
+	<p class='resultsy' id='results_0_5_1'>0_5_1;"An implement with a flat part (of mesh or plastic) and a long handle used to kill insects";"FLYSWAT";</p>
+    <p class='resulty' id='results_0_5_3'>0_5_3;"One who prefers to play alone";"SOLOIST";</p>
+    <p class='resulty' id='results_0_5_5'>0_5_5;"Confused torch is a large bird";"OSTRICH";</p>
+    
+    <p class='resultsy' id='results_1_6_1'>1_6_1;"Against the law";"ILLEGAL";</p>   
+    <p class='resultsy' id='results_3_6_1'>3_6_1;"Sounds like the child of a bush but is an act of deliberate betrayal";"TREASON";</p>
+	<p class='resultsy' id='results_5_6_1'>5_6_1;"A month before or after it, he takes care";"JANITOR";</p>
+
+    <p class='resultsy' id='results_1_6_3'>1_6_3;"Lad began and sat backward on a......";"SONATAS";</p>   
+    <p class='resultsy' id='results_3_6_3'>3_6_3;"a Russian or Polish soup usually containing beet juice as a foundation";"BORSHCH";</p>
+	<p class='resultsy' id='results_5_6_3'>5_6_3;"A little bone";"OSSELET";</p>
+    
+    <p class='resultsy' id='results_1_6_5'>1_6_5;"The slender spear of the Bantu-speaking people of Africa";"ASSEGAI";</p>   
+    <p class='resultsy' id='results_3_6_5'>3_6_5;"Type of number for ordination of bishops";"ORDINAL";</p>
+	<p class='resultsy' id='results_5_6_5'>5_6_5;"Gathers together(money or other) on a hurt knee";"SCRAPES";</p>
+    
+
+    <p class='resultsy' id='results_5_6_1'>5_6_1;"the whitish fibrous membrane (albuginea) that with the cornea forms the outer covering and protection of the eyeball";"SCLERAS";</p>
+    <p class='resultsy' id='results_5_6_3'>5_6_3;"Either of a pair of complex endocrine glands situated near the kidney
+";"ADRENAL";</p>
+    <p class='resultsy' id='results_5_6_5'>5_6_5;"A bivalve shell of the genus Pecten. See Scallop.";"ESCALOP";</p>
+
+    <p class='resultsy' id='results_5_5_0'>5_5_0;"A black garment reaching down to the ankles worn by priests or choristers";"CASSOCK";</p>
+    <p class='resultsy' id='results_5_3_0'>5_3_0;"A laborer who tends fires (as on a coal-fired train or steamship)";"FIREMAN";</p>
+    <p class='resultsy' id='results_5_1_0'>5_1_0;"For a limitless time. P.P.Bliss says brightly beams our Father's mercy from his lighthouse evermore";"FOREVER";</p>
+
+ <!--   <p class='resultsy' id='results_3_5_0'>3_5_0;"The liquid parts of the body being funny";"HUMOURS";</p> -->
+    <p class='resultsy' id='results_3_5_0'>3_5_0;"A collection of resources for a Roy rum";"ARMOURY";</p>
+    <p class='resultsy' id='results_3_3_0'>3_3_0;"Whitish edible root eaten cooked";"PARSNIP";</p>
+    <p class='resultsy' id='results_3_1_0'>3_1_0;"Keep from being perceived by others";"CONCEAL";</p>
+
+    <p class='resultsy' id='results_1_5_0'>1_5_0;"I salt to make this musician";"ALTOIST";</p>
+    <p class='resultsy' id='results_1_3_0'>1_3_0;"Censured severely or angrily and made second class";"BERATED";</p>
+    <p class='resultsy' id='results_1_1_0'>1_1_0;"A small tent used as a dressing room beside the sea or a swimming pool";"CABANAS";</p>
+
+<p>END</p>
+
+
+</div>
+<input name="white" id="white_instruction" type="text" value="1. Click a button to draw cubes: Back (red), Across (blue) or Climb (orange) " size="70" maxlength="70" readonly="true">
+<br>
+
+<input name="red"  id="red_instruction" class="red_instruction" type="text" value="  Back" size ="3" maxlength="3"/> 
+
+
+<input name="blue" id="blue_instruction" class="blue_instruction" type="text" value="Across" size ="6" maxlength="6"/> 
+<input name="orange" id="orange_instruction" class="orange_instruction" type="text" value="Climb" size ="5" maxlength="5"/> 
+
+
+
+</p>
+
+<p id="p_right">
+  
+</p>
+<p id="p_x_axis">
+</p>
+<p id="p_y_axis"></p>
+<p id="p_z_axis">
+</p>
+
+<!------------------->
+<div id="cube_space">
+cube_space
+</div>
+
+</script>
+<p>
+
+	<input type="button" onClick="draw_minicubes('C',0)" class="d000" id="z0" value="C=0"> 	
+	<input type="button" onClick="draw_minicubes('C',1)" class="d100" id="z1" value="1"> 	
+	<input type="button" onClick="draw_minicubes('C',2)" class="d200" id="z2" value="2">
+	<input type="button" onClick="draw_minicubes('C',3)" class="d300" id="z3" value="3">
+	<input type="button" onClick="draw_minicubes('C',4)" class="d400" id="z4" value="4">
+	<input type="button" onClick="draw_minicubes('C',5)" class="d500" id="z5" value="5">
+	<input type="button" onClick="draw_minicubes('C',6)" class="d600" id="z6" value="6">
+    
+        
+	<input type="button" onClick="draw_minicubes('B',0)" class="b000" id="y0" value="0"> 	
+	<input type="button" onClick="draw_minicubes('B',1)" class="b100" id="y1" value="1"> 	
+	<input type="button" onClick="draw_minicubes('B',2)" class="b200" id="y2" value="2">
+	<input type="button" onClick="draw_minicubes('B',3)" class="b300" id="y3" value="3">
+	<input type="button" onClick="draw_minicubes('B',4)" class="b400" id="y4" value="4">
+	<input type="button" onClick="draw_minicubes('B',5)" class="b500" id="y5" value="5">
+	<input type="button" onClick="draw_minicubes('B',6)" class="b600" id="y6" value="b=6">
+
+	<input type="button" onClick="draw_minicubes('A',0)" class="a000" id="x0" value="0"> 	
+	<input type="button" onClick="draw_minicubes('A',1)" class="a100" id="x1" value="1"> 	
+	<input type="button" onClick="draw_minicubes('A',2)" class="a200" id="x2" value="2">
+	<input type="button" onClick="draw_minicubes('A',3)" class="a300" id="x3" value="3">
+	<input type="button" onClick="draw_minicubes('A',4)" class="a400" id="x4" value="4">
+	<input type="button" onClick="draw_minicubes('A',5)" class="a500" id="x5" value="5">
+	<input type="button" onClick="draw_minicubes('A',6)" class="a600" id="x6" value="A=6">
+
+
+
+<p>
+</body>
+</html>

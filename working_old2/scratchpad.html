@@ -1,0 +1,273 @@
+
+/* scratchpad.html
+ FUNCTIONS
+ HTU_functions
+18	string_HTU(HTU_number)
+26	make_HTU(p_a, p_b, p_d)
+44	make_HTU_number(p_a, p_b, p_d)
+56	get_a_from_HTU_number(HTU_in)
+62	get_b_from_HTU_number(HTU_in)
+72	get_d_from_HTU_number(HTU_in)
+80	make_string(inp)
+
+HTML_functions
+5	do_HTML()			debug button on screen 'HTML'
+16	set_space(string)	put given string into area 'cube_space'
+
+minicube.js
+41	mini_cube(index_in) creator
+183	mini_draw_HTML(index)	take the HTML from the given mini_cubes and add it to that in cube_space
+
+word.js
+10	gword(input_word)		?????
+
+functions_used.js
+3	letter_pressed(lett)
+12	get_ANSWER(index)
+27	get_CLUE(index)
+43	clear_possible()
+55	get_letter(add_letter)
+63	put_letter_in_cube(lett, HTU_number)	*************************
+90	answer_selected(selected_ANSWER)
+116	cube_click_black(a_value, b_value, d_value)
+124	cube_click_white(a_value, b_value, d_value)
+166	fetch_clue(word_chosen)
+187	tidy(untidy)
+204	get_clue(word_in)
+217	word_to_cubes(cube_HTU,word_stripped)
+
+letter_pressed
+8	seek_word(lett, HTU_number)
+31	find_word_frame(lett, HTU_number, direction)
+103	add_to_selection(answer_number, selected_ANSWER)
+
+functions8
+6	word_to_select(word)
+26	put_answer_in_direction (answer,HTU_start, ABD_dir_in)
+37	put_answer_in_direction_x(answer,HTU_start) change to a,b.d ***********
+39	put_answer_in_direction_x(answer,HTU_start)
+41	put_answer_in_direction_x(answer,HTU_start)
+44	clean_letter(inp)
+63	upper_case(low)
+144	show_points()
+163	look_for_rest_of_word()
+172	clues_clear()
+180	get_entry(HTU_number)
+196	save_answer(HTU_number, selected_word)
+
+word_location
+	word_location &
+    name_list					???????????????
+    
+emulate.js
+
+draw_cube_space_1.js
+	draw_cube_space_a(a_value)
+    draw_cube_space_b(b_value)
+65	draw_cube_space_d(d_value)  
+93	clear_cube_space()
+100	add_cube_space()
+111	draw_cube(a,b,d)
+  
+
+
+
+
+
+/* Button on screen calls draw_cube_space_d().
+This calls gather_level_d() which in turn calls
+gather_minicube_HTML(HTU_number); which produces the HTML for the horizontal layer
+It places the HTML produced into array cube_HTML[HTU_number] & return the HTML for that layer
+
+called from draw_cube_space_d() which is called from button on screen */
+
+
+//Functions7.js
+
+
+10	function word_to_select(word) {
+
+23	function answer_selected(word) {
+
+44	function draw_x_layer(a_value) {
+
+
+82	function y1(b_value) {
+
+119	function z1(d_value) {
+
+147	function data_change(val) {
+		called from:show_affix_inputs()
+187	function find_words(L1,L2,L3,L4,L5,L6,L7) {
+		called from:Data_change(val)
+281	function clean_letter(inp) {
+		called from: wherever to test for single letter lower case
+	function upper_case(low) {
+		called from: wherever convert a letter to upper case
+	function showit(myid, becomes) {
+		called from:
+	function show_inputs(num) {
+		called from:
+	function clear_numbers() {
+		called from:
+	function clear_cell(cellid) {
+		called from:
+	function add_option(option_text,clue_num) {
+		called from:
+	function clear_options() {
+		called from:
+	function clear_select() {
+		called from:
+	function show_points() {
+		called from:
+	function hide_affix_inputs() {
+		called from:
+	function show_affix_inputs(a_value, b_value, d_value) {
+		called from:
+	function get_z_from_HTU_number(HTU_in) {
+		called from:
+	function update_para(link_number) {
+		called from:
+ function answer_selected(word) {
+		called from:
+ function answer_focus() {
+		called from:
+ function letter_pressed(lett) {
+		called from: buttons on screen labelled A-Z
+        calls:	put_letter_in_cube(lett, HTU_number)
+		&		seek_word(lett, HTU_string)
+   
+ function cube_click_black(a_value, b_value, d_value){
+		called from:
+ function cube_click(a_value, b_value, d_value){
+		called from:
+ function seek_word(lett, HTU_number) {
+		called from:
+			letter_pressed(lett)
+        calls: find_word_frame(lett, HTU_string)
+     
+ function find_word_frame(lett, HTU_string){
+		called from: seek_word(lett, HTU_string)
+        calls:
+        data used in:
+        data used out:
+        /* find_word_frame:
+		Given a letter and its HTU position in the master_cube work out the pattern
+		of letters already used in the given direction.
+		Output is an array word_letters[0-6]
+		*/
+
+ function get_letter(add_letter) {
+		called from:
+ function clear_possible() {
+		called from:
+ function word_to_select(word) {
+		called from:
+ function look_for_rest_of_word() {
+		called from:
+ function add_to_grid() {
+		called from:
+ function put_letter_in_cube(lett, HTU_number) {
+		called from:
+ function clues_clear() {
+		called from:
+ function clues_copy() {
+		called from:
+ function clues_add(index) {
+		called from:
+ function get_entry(HTU_number) {
+		called from:
+ function get_clue(word_in) called from 
+		called from: clues_add(??)
+
+	
+HTU_functions
+	function make_HTU (p_x, p_y, p_z) {
+		called from:
+	function get_x_from_HTU_number(HTU_in) {
+		called from:
+	function get_y_from_HTU_number(HTU_in) {
+		called from:
+	function get_z_from_HTU_number(HTU_in) {
+		called from:
+	function make_string(inp) {
+		called from:
+show_axes.js
+	function x1(b_value) {
+	function y1(b_value) {
+    
+    function z1(d_value) {
+
+
+
+draw_base2 functions
+
+100	function collate_minicubes_HTML() {
+142	function test_cube_white(HTU_number) {
+212	function clear_cube_HTML() {
+219	function get_string(figure) {
+292	function gather_level_y(temp_y) {
+315	function gather_level_z(temp_z) {
+zz327	function draw_cube_again() {
+346	function draw_slice(xyz, value) {
+357	function draw_Across_slice(xyz, value) {
+367	function draw_back_slice(xyz, value) {
+377	function draw_down_slice(xyz, value) {
+390	function gather_minicube_HTML(HTU_number, ABD_dir) {
+
+VARIABLES
+draw_base2
+
+draw_cube_space
+270	function draw_cube_space_a(a_value) {
+282	function draw_cube_space_b(b_value) {
+304	function draw_cube_space_d(d_value) {
+198	function draw_cube_space(gathered){
+
+/* 
+draw_base3.js
+function collate_minicubes_HTML() {
+function test_cube_white(HTU_number) {
+function clear_cube_HTML() {
+function get_string(figure) {
+function gather_level_z(d_value) {
+function gather_minicube_HTML(HTU_number, ABD_dir) {
+function draw_cube_space_a(a_value) {
+zz function draw_cube_again() {
+function draw_slice(xyz, value) {
+function draw_Across_slice(xyz, value) {
+function draw_back_slice(xyz, value) {
+function draw_down_slice(xyz, value) {
+function gather_minicube_HTML(HTU_number,ABD_dir) {
+
+	
+*/
+//DATA.js
+height_xyz = new Array(777);
+left_xyz = new Array(777);
+cube_colour = new Array(777);
+cube_letter = new Array(777);
+cube_HTML = new Array(777);
+//ascii_string = new Array(777);
+HTU_number = 0;
+HTU_string = '000';
+*/
+/* my data rules:-
+variables starting HTU_ are in Hundreds, Tens & Units for X, y & z
+HTU_number is 
+variables starting int_ are just integer pointers to an array 
+*/
+/*
+wordlist.js
+
+colours = new Array(777);
+name_list = new Array();
+word_list= new Array();			//Array of strings representing the numbers of the mini-cubes
+word_list_number= new Array()	//Array of integers representing the numbers of the mini-cubes	
+
+var saved_word_list = new Array(7);
+var sub_word_list = new Array(7);
+var word_letters = new Array(7);
+
+ */
+

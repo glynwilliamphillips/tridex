@@ -1,0 +1,339 @@
+/*  style sheets */
+
+/* <style type="text/css"> */
+
+p.glyn { background:red;}
+
+
+p.frame1 {
+	background:;
+	position:absolute;
+	top:450px;
+	background-color: #6FF;
+	/*left:500pc;*/
+}
+p.frame2 {
+	background:red;
+	position:absolute;
+	top:750px;
+	50px;
+	/*left:500pc;*/
+}
+p.frame3a {
+	background:red;
+	position:absolute;
+	top:300px;
+	width:auto;
+}
+
+p.frame3f {
+	background:red;
+	position:absolute;
+	top:270px;
+}
+p.frame3k {
+	background:red;
+	position:absolute;
+	top:290px;
+}
+p.frame3p {
+	background:red;
+	position:absolute;
+	top:310px;
+}
+p.frame3u {
+	background:red;
+	position:absolute;
+	top:330px;
+}
+p.frame_debug {
+	background:yellow;
+	position:absolute;
+	top:550px;
+	/*left:500pc;*/
+}
+p.frame_clues_1 {
+	background:green;
+	position:absolute;
+	top:700px;
+	/*left:500pc;*/
+}
+p.frame_clues_2 {
+	background:green;
+	position:absolute;
+	top:750px;
+	/*left:500pc;*/
+}
+/* Looked at from screen where X=2, define the screen coordinates for the box */
+p.x2_x3y3 {background:#FFF; position:absolute; left:100px; top: 100px}
+
+
+p.vis {}
+p.hidden {visibility: hidden}
+p.x2_x20y25 {background:#FFF; position:absolute; left:20px; top: 25px}
+p.x2_x20y25 {background:#FFF; position:absolute; left:20px; top: 25px}
+p.abd001 { background:green; position:absolute; top:0px; left:460px;  display:none}
+
+/* a000-a700, b000-Y700, Z000-Z700 position the buttons toselect the slice of the cube */
+input.a000 { background:#6CC; position:absolute; top:350px; left:420px;}
+input.a100 { background:#6CC; position:absolute; top:345px; left:450px;}
+input.a200 { background:#6CC; position:absolute; top:330px; left:480px;}
+input.a300 { background:#6CC; position:absolute; top:315px; left:510px;}
+input.a400 { background:#6CC; position:absolute; top:300px; left:540px;}
+input.a500 { background:#6CC; position:absolute; top:285px; left:570px;}
+input.a600 { background:#6CC; position:absolute; top:270px; left:600px;}
+input.a700 { background:#6CC; position:absolute; top:245px; left:630px;}
+
+input.b000 { background:red; position:absolute; top:370px; left:410px;}
+input.b100 { background:red; position:absolute; top:345px; left:380px;}
+input.b200 { background:red; position:absolute; top:330px; left:350px;}
+input.b300 { background:red; position:absolute; top:315px; left:320px;}
+input.b400 { background:red; position:absolute; top:300px; left:290px;}
+input.b500 { background:red; position:absolute; top:285px; left:260px;}
+input.b600 { background:red; position:absolute; top:275px; left:215px;}
+
+input.d000 { background:orange; position:absolute; top:75px; left:600px;}
+input.d100 { background:orange; position:absolute; top:100px; left:600px;}
+input.d200 { background:orange; position:absolute; top:125px; left:600px;}
+input.d300 { background:orange; position:absolute; top:150px; left:600px;}
+input.d400 { background:orange; position:absolute; top:175px; left:600px;}
+input.d500 { background:orange; position:absolute; top:200px; left:600px;}
+input.d600 { background:orange; position:absolute; top:225px; left:600px;}
+
+
+/* define the style for minicubes - deleted*/
+
+
+/* Set values for element a162 */
+
+input.a261 { background:red; position:absolute; top:280px; left:230px;}
+input.a241 { background:red; position:absolute; top:330px; left:330px;}
+input.a221 { background:red; position:absolute; top:390px; left:440px;}
+
+input.a261h { background:red; position:absolute; top:330px; left:500px; display:none}
+input.a241h { background:red; position:absolute; top:370px; left:570px; display:none}
+input.a221h { background:red; position:absolute; top:410px; left:650px; display:none}
+/* add 50 to left & 30 from, top */
+ 
+input.a272 { background:red; position:absolute; top:310px; left:180px;}
+input.a262 { background:red; position:absolute; top:340px; left:230px;}
+input.a252 { background:red; position:absolute; top:410px; left:280px;}
+input.a242 { background:red; position:absolute; top:415px; left:580px;}
+input.a232 { background:red; position:absolute; top:435px; left:680px;}
+input.a222 { background:red; position:absolute; top:455px; left:650px;}
+input.a212 { background:red; position:absolute; top:475px; left:690px;}
+
+input.a272h { background:red; position:absolute; top:355px; left:460px; display:none}
+input.a262h { background:red; position:absolute; top:375px; left:500px; display:none}
+input.a252h { background:red; position:absolute; top:395px; left:530px; display:none}
+input.a242h { background:red; position:absolute; top:415px; left:570px; display:none}
+input.a232h { background:red; position:absolute; top:435px; left:610px; display:none}
+input.a222h { background:red; position:absolute; top:455px; left:650px; display:none}
+input.a212h { background:red; position:absolute; top:475px; left:690px; display:none}
+
+input.a263 { background:red; position:absolute; top:420px; left:500px;}
+input.a243 { background:red; position:absolute; top:460px; left:570px;}
+input.a223 { background:red; position:absolute; top:500px; left:650px;}
+
+input.a263h { background:red; position:absolute; top:420px; left:500px; display:none}
+input.a243h { background:red; position:absolute; top:460px; left:570px; display:none}
+input.a223h { background:red; position:absolute; top:500px; left:650px; display:none}
+
+
+input.a274 { background:red; position:absolute; top:440px; left:460px;}
+input.a264 { background:red; position:absolute; top:460px; left:500px;}
+input.a254 { background:red; position:absolute; top:480px; left:540px;}
+input.a244 { background:red; position:absolute; top:500px; left:570px;}
+input.a234 { background:red; position:absolute; top:520px; left:610px;}
+input.a224 { background:red; position:absolute; top:540px; left:650px;}
+input.a214 { background:red; position:absolute; top:560px; left:690px;}
+
+input.a274h { background:red; position:absolute; top:440px; left:460px; display:none}
+input.a264h { background:red; position:absolute; top:460px; left:500px; display:none}
+input.a254h { background:red; position:absolute; top:480px; left:540px; display:none}
+input.a244h { background:red; position:absolute; top:500px; left:570px; display:none}
+input.a234h { background:red; position:absolute; top:520px; left:610px; display:none}
+input.a224h { background:red; position:absolute; top:540px; left:650px; display:none}
+input.a214h { background:red; position:absolute; top:560px; left:690px; display:none}
+
+input.a265 { background:red; position:absolute; top:500px; left:500px;}
+input.a245 { background:red; position:absolute; top:540px; left:570px;}
+input.a225 { background:red; position:absolute; top:580px; left:650px;}
+
+input.a265h { background:red; position:absolute; top:500px; left:500px; display:none}
+input.a245h { background:red; position:absolute; top:540px; left:570px; display:none}
+input.a225h { background:red; position:absolute; top:580px; left:650px; display:none}
+
+input.a276 { background:red; position:absolute; top:520px; left:460px;}
+input.a266 { background:red; position:absolute; top:540px; left:500px;}
+input.a256 { background:red; position:absolute; top:560px; left:530px;}
+input.a246 { background:red; position:absolute; top:580px; left:570px;}
+input.a236 { background:red; position:absolute; top:600px; left:610px;}
+input.a226 { background:red; position:absolute; top:620px; left:650px;}
+input.a216 { background:red; position:absolute; top:640px; left:690px;}
+
+input.a276h { background:red; position:absolute; top:520px; left:460px; display:none}
+input.a266h { background:red; position:absolute; top:540px; left:500px; display:none}
+input.a256h { background:red; position:absolute; top:560px; left:530px; display:none}
+input.a246h { background:red; position:absolute; top:580px; left:570px; display:none}
+input.a236h { background:red; position:absolute; top:600px; left:610px; display:none}
+input.a226h { background:red; position:absolute; top:620px; left:650px; display:none}
+input.a216h { background:red; position:absolute; top:640px; left:690px; display:none}
+
+input.a267 { background:red; position:absolute; top:580px; left:500px;}
+input.a247 { background:red; position:absolute; top:630px; left:570px;}
+input.a227 { background:red; position:absolute; top:660px; left:650px;}
+
+input.a267h { background:red; position:absolute; top:580px; left:500px; display:none}
+input.a247h { background:red; position:absolute; top:630px; left:570px; display:none}
+input.a227h { background:red; position:absolute; top:660px; left:650px; display:none}
+
+p.frx0y0z0 { position:absolute; top:805px; left:400px}
+p.frx1y0z0 { position:absolute; top:820px; left:375px}
+p.frx2y0z0 { position:absolute; top:835px; left:350px}
+p.frx3y0z0 { position:absolute; top:850px; left:325px}
+p.frx4y0z0 { position:absolute; top:865px; left:300px}
+p.frx5y0z0 { position:absolute; top:880px; left:275px}
+p.frx6y0z0 { position:absolute; top:895px; left:250px}
+
+p.frx0y1z0 { position:absolute; top:820px; left:425px}
+p.frx1y1z0 { position:absolute; top:835px; left:400px}
+p.frx2y1z0 { position:absolute; top:850px; left:375px}
+p.frx3y1z0 { position:absolute; top:865px; left:350px}
+p.frx4y1z0 { position:absolute; top:880px; left:325px}
+p.frx5y1z0 { position:absolute; top:895px; left:300px}
+p.frx6y1z0 { position:absolute; top:910px; left:275px}
+
+p.frx0y2z0 { position:absolute; top:835px; left:450px}
+p.frx1y2z0 { position:absolute; top:850px; left:425px}
+p.frx2y2z0 { position:absolute; top:865px; left:400px}
+p.frx3y2z0 { position:absolute; top:880px; left:375px}
+p.frx4y2z0 { position:absolute; top:895px; left:350px}
+p.frx5y2z0 { position:absolute; top:910px; left:325px}
+p.frx6y2z0 { position:absolute; top:925px; left:300px}
+
+p.frx0y3z0 { position:absolute; top:850px; left:475px}
+p.frx1y3z0 { position:absolute; top:865px; left:450px}
+p.frx2y3z0 { position:absolute; top:880px; left:425px}
+p.frx3y3z0 { position:absolute; top:895px; left:400px}
+p.frx4y3z0 { position:absolute; top:910px; left:375px}
+p.frx5y3z0 { position:absolute; top:925px; left:350px}
+p.frx6y3z0 { position:absolute; top:940px; left:325px}
+
+p.frx0y4z0 { position:absolute; top:865px; left:500px}
+p.frx1y4z0 { position:absolute; top:880px; left:475px}
+p.frx2y4z0 { position:absolute; top:895px; left:450px}
+p.frx3y4z0 { position:absolute; top:910px; left:425px}
+p.frx4y4z0 { position:absolute; top:925px; left:400px}
+p.frx5y4z0 { position:absolute; top:940px; left:375px}
+p.frx6y4z0 { position:absolute; top:955px; left:350px}
+
+p.frx0y5z0 { position:absolute; top:880px; left:525px}
+p.frx1y5z0 { position:absolute; top:895px; left:500px}
+p.frx2y5z0 { position:absolute; top:910px; left:475px}
+p.frx3y5z0 { position:absolute; top:925px; left:450px}
+p.frx4y5z0 { position:absolute; top:940px; left:425px}
+p.frx5y5z0 { position:absolute; top:955px; left:400px}
+p.frx6y5z0 { position:absolute; top:970px; left:375px}
+
+
+p.frx0y6z0 { position:absolute; top:895px; left:550px}
+p.frx1y6z0 { position:absolute; top:910px; left:525px}
+p.frx2y6z0 { position:absolute; top:925px; left:500px}
+p.frx3y6z0 { position:absolute; top:940px; left:475px}
+p.frx4y6z0 { position:absolute; top:955px; left:450px}
+p.frx5y6z0 { position:absolute; top:970px; left:425px}
+p.frx6y6z0 { position:absolute; top:985px; left:400px}
+
+/*---------------------------------------------*/
+p.frx0y0z1 { position:absolute; top:785px; left:400px}
+p.frx1y0z1 { position:absolute; top:800px; left:375px}
+p.frx2y0z1 { position:absolute; top:815px; left:350px}
+p.frx3y0z1 { position:absolute; top:830px; left:325px}
+p.frx4y0z1 { position:absolute; top:845px; left:300px}
+p.frx5y0z1 { position:absolute; top:860px; left:275px}
+p.frx6y0z1 { position:absolute; top:875px; left:250px}
+
+p.frx0y1z1 { position:absolute; top:800px; left:425px}
+p.frx1y1z1 { position:absolute; top:815px; left:400px}
+p.frx2y1z1 { position:absolute; top:830px; left:375px}
+p.frx3y1z1 { position:absolute; top:845px; left:350px}
+p.frx4y1z1 { position:absolute; top:860px; left:325px}
+p.frx5y1z1 { position:absolute; top:875px; left:300px}
+p.frx6y1z1 { position:absolute; top:890px; left:275px}
+
+p.frx0y2z1 { position:absolute; top:815px; left:450px}
+p.frx1y2z1 { position:absolute; top:830px; left:425px}
+p.frx2y2z1 { position:absolute; top:845px; left:400px}
+p.frx3y2z1 { position:absolute; top:860px; left:375px}
+p.frx4y2z1 { position:absolute; top:875px; left:350px}
+p.frx5y2z1 { position:absolute; top:890px; left:325px}
+p.frx6y2z1 { position:absolute; top:905px; left:300px}
+
+p.frx0y3z1 { position:absolute; top:830px; left:475px}
+p.frx1y3z1 { position:absolute; top:845px; left:450px}
+p.frx2y3z1 { position:absolute; top:860px; left:425px}
+p.frx3y3z1 { position:absolute; top:875px; left:400px}
+p.frx4y3z1 { position:absolute; top:890px; left:375px}
+p.frx5y3z1 { position:absolute; top:905px; left:350px}
+p.frx6y3z1 { position:absolute; top:920px; left:325px}
+
+p.frx0y4z1 { position:absolute; top:845px; left:500px}
+p.frx1y4z1 { position:absolute; top:860px; left:475px}
+p.frx2y4z1 { position:absolute; top:875px; left:450px}
+p.frx3y4z1 { position:absolute; top:890px; left:425px}
+p.frx4y4z1 { position:absolute; top:905px; left:400px}
+p.frx5y4z1 { position:absolute; top:920px; left:375px}
+p.frx6y4z1 { position:absolute; top:935px; left:350px}
+
+p.frx0y5z1 { position:absolute; top:860px; left:525px}
+p.frx1y5z1 { position:absolute; top:875px; left:500px}
+p.frx2y5z1 { position:absolute; top:890px; left:475px}
+p.frx3y5z1 { position:absolute; top:905px; left:450px}
+p.frx4y5z1 { position:absolute; top:920px; left:425px}
+p.frx5y5z1 { position:absolute; top:935px; left:400px}
+p.frx6y5z1 { position:absolute; top:950px; left:375px}
+
+
+p.frx0y6z1 { position:absolute; top:875px; left:550px}
+p.frx1y6z1 { position:absolute; top:890px; left:525px}
+p.frx2y6z1 { position:absolute; top:905px; left:500px}
+p.frx3y6z1 { position:absolute; top:920px; left:475px}
+p.frx4y6z1 { position:absolute; top:935px; left:450px}
+p.frx5y6z1 { position:absolute; top:950px; left:425px}
+p.frx6y6z1 { position:absolute; top:965px; left:400px}
+
+
+
+/*
+p.frx0y1x1 { position:absolute; top:820px; left:425px}
+p.frx0y2x0 { position:absolute; top:835px; left:350px}
+p.frx0y2x2 { position:absolute; top:835px; left:450px}
+p.frx0y3x0 { position:absolute; top:850px; left:325px}
+p.frx0y3x3 { position:absolute; top:850px; left:475px}
+p.frx0y4x0 { position:absolute; top:865px; left:300px}
+p.frx0y4x4 { position:absolute; top:865px; left:500px}
+p.frx0y5x0 { position:absolute; top:880px; left:275px}
+p.frx0y5x5 { position:absolute; top:880px; left:525px}
+p.frx0y6x0 { position:absolute; top:895px; left:250px}
+p.frx0y6x6 { position:absolute; top:895px; left:550px}
+
+p.frx0y7x0 { position:absolute; top:910px; left:250px}
+p.frx0y7x6 { position:absolute; top:910px; left:550px}
+
+p.frx1y0x0 { position:absolute; top:785px; left:400px}
+p.frx1y0x1 { position:absolute; top:820px; left:375px}
+p.frx1y1x1 { position:absolute; top:820px; left:425px}
+p.frx1y2x0 { position:absolute; top:835px; left:350px}
+p.frx1y2x2 { position:absolute; top:835px; left:450px}
+p.frx1y3x0 { position:absolute; top:850px; left:325px}
+p.frx1y3x3 { position:absolute; top:850px; left:475px}
+p.frx1y4x0 { position:absolute; top:865px; left:300px}
+p.frx1y4x4 { position:absolute; top:865px; left:500px}
+p.frx1y5x0 { position:absolute; top:880px; left:275px}
+p.frx1y5x5 { position:absolute; top:880px; left:525px}
+p.frx1y6x0 { position:absolute; top:895px; left:250px}
+p.frx1y6x6 { position:absolute; top:895px; left:550px}
+
+p.frx1y7x0 { position:absolute; top:910px; left:250px}
+p.frx1y7x6 { position:absolute; top:910px; left:550px}

@@ -1,0 +1,211 @@
+
+/* scratchpad.html
+ FUNCTIONS
+ HTU_functions
+18	string_HTU(HTU_number)
+26	make_HTU(p_a, p_b, p_d)
+44	make_HTU_number(p_a, p_b, p_d)
+56	get_a_from_HTU_number(HTU_in)
+62	get_b_from_HTU_number(HTU_in)
+72	get_d_from_HTU_number(HTU_in)
+80	make_string(inp)
+
+HTML_functions
+5	do_HTML()			debug button on screen 'HTML'
+16	set_space(string)	put given string into area 'cube_space'
+
+minicube.js
+41	mini_cube(index_in) creator
+183	mini_draw_HTML(index)	take the HTML from the given mini_cubes and add it to that in cube_space
+
+word.js
+10	gword(input_word)		?????
+
+functions_used.js
+3	letter_pressed(lett)
+12	get_ANSWER(index)
+27	get_CLUE(index)
+43	clear_possible()
+55	get_letter(add_letter)
+63	put_letter_in_cube(lett, HTU_number)	*************************
+90	answer_selected(selected_ANSWER)
+116	cube_click_black(a_value, b_value, d_value)
+124	cube_click_white(a_value, b_value, d_value)
+166	fetch_clue(word_chosen)
+187	tidy(untidy)
+204	get_clue(word_in)
+217	word_to_cubes(cube_HTU,word_stripped)
+
+letter_pressed
+8	seek_word(lett, HTU_number)
+31	find_word_frame(lett, HTU_number, direction)
+103	add_to_selection(answer_number, selected_ANSWER)
+
+functions8
+6	word_to_select(word)
+26	put_answer_in_direction (answer,HTU_start, ABD_dir_in)
+48	save_answer(HTU_number, selected_word)
+
+word_location
+	word_location &
+    name_list					???????????????
+    word_filled	array true/false
+    
+emulate.js
+
+draw_cube_space_1.js
+	draw_cube_space_a(a_value)
+    draw_cube_space_b(b_value)
+65	draw_cube_space_d(d_value)  
+93	clear_cube_space()
+100	add_cube_space()
+111	draw_cube(a,b,d)
+  
+
+
+
+
+
+/* Button on screen calls draw_cube_space_d().
+This calls gather_level_d() which in turn calls
+gather_minicube_HTML(HTU_number); which produces the HTML for the horizontal layer
+It places the HTML produced into array cube_HTML[HTU_number] & return the HTML for that layer
+
+called from draw_cube_space_d() which is called from button on screen */
+
+
+	
+HTU_functions
+	function make_HTU (p_x, p_y, p_z) {
+		called from:
+	function get_x_from_HTU_number(HTU_in) {
+		called from:
+	function get_y_from_HTU_number(HTU_in) {
+		called from:
+	function get_z_from_HTU_number(HTU_in) {
+		called from:
+	function make_string(inp) {
+		called from:
+show_axes.js
+	function x1(b_value) {
+	function y1(b_value) {
+    
+    function z1(d_value) {
+
+
+
+draw_base2 functions
+
+100	function collate_minicubes_HTML() {
+142	function test_cube_white(HTU_number) {
+212	function clear_cube_HTML() {
+219	function get_string(figure) {
+292	function gather_level_y(temp_y) {
+315	function gather_level_z(temp_z) {
+zz327	function draw_cube_again() {
+346	function draw_slice(xyz, value) {
+357	function draw_Across_slice(xyz, value) {
+367	function draw_back_slice(xyz, value) {
+377	function draw_down_slice(xyz, value) {
+390	function gather_minicube_HTML(HTU_number, ABD_dir) {
+
+VARIABLES
+draw_base2
+
+draw_cube_space
+270	function draw_cube_space_a(a_value) {
+282	function draw_cube_space_b(b_value) {
+304	function draw_cube_space_d(d_value) {
+198	function draw_cube_space(gathered){
+
+/* 
+draw_base3.js
+function collate_minicubes_HTML() {
+function test_cube_white(HTU_number) {
+function clear_cube_HTML() {
+function get_string(figure) {
+function gather_level_z(d_value) {
+function gather_minicube_HTML(HTU_number, ABD_dir) {
+function draw_cube_space_a(a_value) {
+zz function draw_cube_again() {
+function draw_slice(xyz, value) {
+function draw_Across_slice(xyz, value) {
+function draw_back_slice(xyz, value) {
+function draw_down_slice(xyz, value) {
+function gather_minicube_HTML(HTU_number,ABD_dir) {
+
+	
+*/
+//DATA.js
+height_xyz = new Array(777);
+left_xyz = new Array(777);
+cube_colour = new Array(777);
+cube_letter = new Array(777);
+cube_HTML = new Array(777);
+//ascii_string = new Array(777);
+HTU_number = 0;
+HTU_string = '000';
+*/
+/* my data rules:-
+variables starting HTU_ are in Hundreds, Tens & Units for X, y & z
+HTU_number is 
+variables starting int_ are just integer pointers to an array 
+*/
+/*
+wordlist.js
+
+colours = new Array(777);
+name_list = new Array();
+word_list= new Array();			//Array of strings representing the numbers of the mini-cubes
+word_list_number= new Array()	//Array of integers representing the numbers of the mini-cubes	
+
+var saved_word_list = new Array(7);
+var sub_word_list = new Array(7);
+var word_letters = new Array(7);
+
+ */
+ 
+ /*DELETED */
+ function zz_show_points() {
+	alert('oops');
+	console.log('functions6_show_points()');
+
+	temp = document.getElementById('p_left');
+
+	temp.innerHTML = '<input type="button" class="x0y0h"; value="y=0" id="idx0y0"><input type="button" class="x0y10"; value="y=10"><input type="button" class="x0y20"; value="y=20"><input type="button" class="x0y30"; value="y=30"><input type="button" class="x0y40"; value="y=40"><input type="button" class="x0y50"; value="y=50"><input type="button" class="x0y60"; value="y=60"><input type="button" class="x0y70"; value="y=70"><input type="button" class="x0y80"; value="y=80"><input type="button" class="x0y90"; value="y=90">';
+	temp = document.getElementById('p_top');
+	temp.innerHTML = '	<input type="button" class="x10y0"; value="x=10"><input type="button" class="x20y0"; value="x=20"><input type="button" class="x30y0"; value="x=30"><input type="button" class="x40y0"; value="x=40"><input type="button" class="x50y0"; value="x=50"><input type="button" class="x60y0"; value="x=60"><input type="button" class="x70y0"; value="x=70"><input type="button" class="x80y0"; value="x=80">';
+	
+	temp = document.getElementById('p_right');
+	temp.innerHTML = '	<input type="button" class="x90y0"; value="x90y0"><input type="button" class="x90y10"; value="x90y10"><input type="button" class="x90y20"; value="x90y20"><input type="button" class="x90y30"; value="x90y30"><input type="button" class="x90y40"; value="x90y40"><input type="button" class="x90y50"; value="x90y50"><input type="button" class="x90y60"; value="x90y60"><input type="button" class="x90y70"; value="x90y70"><input type="button" class="x90y80"; value="x90y80"><input type="button" class="x90y90"; value="x90y90">';
+}
+// JavaScript Document clues_code
+function zz_clues_clear() {
+	console.log('functions6_clear clues');
+	clues_temp = document.getElementById('clues_box');
+	clues_temp.innerHTML = 'Clues';
+	clues_text = '';
+}
+
+/* call with a list of locations and a list of known letters */
+var known_letters = new Array(7);
+var known_locations = new Array(7);
+function zz_look_for_rest_of_word() {
+	console.log('functions7:look_for_rest_of_word()');
+	if(known_letters[0] = null) {
+		get_letter(posn,known_locations[0]);
+	}
+}
+
+/* Given the number of the mini-cube return a string of the letter in that cell & tab */
+function zz_get_entry(HTU_number) {
+	console.log('functions8:get_entry HTU='+HTU_number);
+	GEvalue = cube_letter[HTU_number];
+	if(GEvalue == '_') {
+		word_match = false;
+	} else {
+		whole_word += GEvalue;
+	}
+	
+	return ('['+HTU_number+']'+cube_letter[HTU_number]);
+}
